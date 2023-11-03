@@ -1,0 +1,64 @@
+
+ /* Menu */
+
+ header {
+   background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+ }
+
+
+
+#logo {
+    font-family:'Righteous', cursive; ;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var();
+}
+
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    display: block;
+    position: relative;
+    padding: .5rem;
+    color:#FFF2EF;
+    text-decoration: none;
+    font-family: sans-serif;
+    border-radius: 16px;
+}
+
+#menu a::after {
+    content: "";
+    position: absolute;
+    background-color: aqua;
+    height: 4px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: 0.2s;
+
+}
+
+#menu a:hover::after {
+   width: 100%;
+}
+
+#btn-mobile {
+    display: none;
+  }
+  
+ 
+ /* Menu */

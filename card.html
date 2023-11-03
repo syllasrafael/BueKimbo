@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cardhover.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        button {
+            border: 1px solid #ddd;
+            background: none;
+            position: relative;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #000000;
+            overflow: hidden;
+            text-transform: capitalize;
+            font-weight:900;
+            cursor: pointer;
+           
+            
+            transition: color 300ms;
+        }
+
+        button::before {
+            content: "";
+            position: absolute;
+            top:100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:linear-gradient(
+                30deg, rgb(255, 120, 203), rgb(186,140,254), rgb(92, 240,92)
+            );
+            z-index: -1;
+            transform: scaleX(var(--x));
+            transition: transform 300ms;
+        }
+
+        button:hover {
+            color: #fff;
+        }
+
+        button:hover::before {
+          top: 0;
+        }
+
+
+
+    </style>
+  </head>
+  <body>
+
+<button type="button">Submite</button>
+   <!-- <div class="card">
+        <div><img class="card-img" src="asset/image/justinohandanga2.jpeg" alt="justinohandanga2"></div>
+        <div class="card-body">
+                <h1 class="card-title">Pronta Trilha</h1>
+                <p class="card-sub-title">KEWESEKI T8 PARA TRILHA
+                </p>
+                <p class="card-info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident officia sapiente veniam repellendus corporis. Autem dolorem cumque officia error vitae ipsum, nam magnam eum consequatur, illum, tempore atque veritatis cupiditate?
+                </p>
+                <button type="button" class="card-btn">
+                    Letra
+                </button>
+        </div>
+    </div> 
+<h1>CSS-only Carousel</h1>
+
+<p>This carousel is created with HTML and CSS only.</p>
+
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+        <a href="#carousel__slide4"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
+      </div>
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide3"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>-->
+  </body>
+</html>

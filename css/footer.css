@@ -1,0 +1,216 @@
+/* Footer Geral */
+
+footer {
+    display: block;
+    background-color: #000000;
+    margin-top: 4rem;
+}
+
+.geral_1 {
+    display: grid;
+    justify-content: center;
+    padding: 20px 0px 0px;
+}
+
+
+.footer-label {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.footer-alfabeto {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 28px;
+}
+
+.alphabeto-lista {
+    margin-left: 10px 
+}
+
+
+.footer_lista {
+    display: inline-block;
+}
+
+.footer_lista a {
+    list-style: none;
+    font-size: 14px;
+    padding: 0 5px;
+    margin-right: 1px;
+}
+
+.footer ul li a {
+ text-decoration: none;
+ color: #9e9e9e;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+    color: rgb(239, 239, 239);
+
+}
+
+.rodape-g1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 28px 0px 30px
+}
+
+.rodape-g2 ul li {
+    list-style: none;
+}
+
+.rodape-g2 ul li a {
+
+    padding: 10px 0;
+    min-width: 48px;
+    display: inline-block;
+    font-size: 13px;
+
+}
+/* Footer hr */
+
+.footer_divider-artista {
+    border: 0;
+    height: 1px;
+    background: #2D2D2D;
+    margin: 25px 0;
+}
+
+.footer_divider {
+    border: 0;
+    height: 1px;
+    background: #2D2D2D;
+    margin: 25px 0;
+}
+
+/* Social Midia */
+
+.socialmidia-position {
+    display: flex;
+    justify-content: space-evenly;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+  
+.logo-facebook {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    background-color:#4267B2;
+    padding: 5px 16px;
+    border-radius: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.logo-facebook:hover {
+    background-color: #2b4476;
+    transform: scale(1.05);
+}
+
+.logo-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    background-color:#25D366;
+    padding: 5px 16px;
+    border-radius: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.logo-whatsapp:hover {
+    background-color: #05612d;
+    transform: scale(1.05);
+}
+
+.logo-instagram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    padding: 5px 16px;
+    border-radius: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.logo-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #beb65f 0%, #cac379 5%, #9e382e 45%,#9c1b73 60%,#1b3ca0 90%);
+    transform: scale(1.05);
+}
+
+.logo-twitter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    background:#1DA1F2 ;
+    padding: 5px 16px;
+    border-radius: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.logo-twitter:hover {
+    background: #136192 ;
+    transform: scale(1.05);
+}
+
+.logo-youtube {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    background:#FF0000 ;
+    padding: 5px 16px;
+    border-radius: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+  
+}
+
+.logo-youtube:hover {
+    background: #9f0101 ;
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon-size-position{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+  
+/* Social Midia */
+
+/* Footer Paragrafo fim */
+
+.footer--image img {
+    width: 200px;
+    height: auto;
+}
+
+.footer-letrasText {
+    font-family: 'Sarala', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    word-spacing: 2px;
+    margin-left: 25px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+/* Footer Paragrafo fim */

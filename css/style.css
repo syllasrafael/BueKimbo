@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url(header.css);
+@import url(main.css);
+@import url(cards.css);
+@import url(classification.css);
+@import url(footer.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+:root {
+  --color-background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+  --color-golden: #DCCA87;
+  --color-text: #616161;
+  --color-text-sec: #ECD6C4;
+  --color-text-btn: #ffffff;
+  --card1-gradient-color1: #A69580;
+  --card1-gradient-color2: #A67449;
+  --card2-gradient-color1: #735236;
+  --card2-gradient-color2: #F2CEA2;
+  --card3-gradient-color1: #402F21;
+  --card3-gradient-color2: #734C29;
+  --card5-gradient-color1: #A68263;
+  --card4-gradient-color1: #402915;
+  --card4-gradient-color2: #A68263;
+  --card5-gradient-color2: #D9B9A7;
+}
+
+body {
+
+  font-size: 100%;
+  background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+}
+
+
+/* TOP MUSICA */
+
+  /*TOPMUSIC*/
+
+  @media screen and (max-width: 768px) {
+
+    #menu {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      right: 0px;
+      background: linear-gradient(to top, #2e2c2c 0%, black 80%);
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+
+
+    #menu a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+      border-radius: 0;
+      transition: background-color 0.8s;
+
+    }
+
+    #menu a:hover {
+      background-color: #ecd6c477;
+
+    }
+
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      color: #ECD6C4;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+
+    .rodape-g2 .rodape-g2-three {
+      display: none;
+    }
+
+    .w2 {
+      display: none;
+    }
+
+    .midiasize {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+
+    }
+
+    .icon-size-position {
+      margin-right: 0px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 950px) {
+    /*Card*/
+
+    .card-wrap-position {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card-wrap {
+      width: 208px;
+      transition: all 2s ease-out 0;
+    }
+
+    .card-header {
+      height: 150px;
+      width: 100%;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 65%;
+      margin: 0 auto;
+    }
+
+    .card-title {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+
+    .card-text {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .card-header i {
+      color: #fff;
+      font-size: 50px;
+    }
+
+    .section--conteudo--escrito {
+      position: relative;
+      left: 25px;
+      top: 25px;
+    }
+
+  }
+
+  @media screen and (max-width: 600px) {
+
+
+    ul li a {
+      color:#FFF2EF;
+      text-decoration: none;
+      font-family: sans-serif;
+      border-radius: none;
+    }
+
+
+    .conteudo-principal {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin: 2em;
+    }
+
+    .conteudo-principal-escrito-paragrafo {
+      font-family: 'Sarala', sans-serif;
+      text-align: justify;
+      font-weight: 400;
+      font-size: 13px;
+      color: white;
+    }
+
+    #quebra_paragrafo {
+      display: none;
+    }
+
+    .conteudo-principal-imagem {
+      width: 290px;
+      height: 250px;
+    }
+
+    .conteudo-principal-imagem img {
+      width: 100%;
+      height: 270px;
+    }
+
+    .conteudo-secundario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+
+    }
+
+    .conteudo-secundario-titulo {
+      text-align: center;
+      padding-top: 48px;
+      font-family: 'Righteous', cursive;
+      font-weight: 400;
+      font-size: 24px;
+      color: white;
+      margin-bottom: 16px;
+
+    }
+
+    .conteudo-principal-escrito-titulo {
+      font-family: 'Righteous', cursive;
+      font-weight: 400;
+      font-size: 30px;
+      color: #ECD6C4;
+    }
+
+    .conteudo-secundario-paragrafo {
+
+      font-family: 'Sarala', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: white;
+      text-align: justify;
+
+    }
+
+    .conteudo-principal-escrito-botao {
+
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      width: 100px;
+      height: 40px;
+      border-radius: 20px;
+      font-size: 20px;
+
+
+    }
+
+    /*Card*/
+
+    .card-wrap-position {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card-wrap {
+      width: 208px;
+      transition: all 2s ease-out 0;
+    }
+
+    .card-header {
+      height: 150px;
+      width: 100%;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 65%;
+      margin: 0 auto;
+    }
+
+    .card-title {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+
+    .card-text {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .card-header i {
+      color: #fff;
+      font-size: 50px;
+    }
+
+    .rodape-g2-three {
+      display: none;
+    }
+
+    .section--imagem--w2 {
+      width: 100%;
+    }
+
+    .section--imagem--w2 img {
+      width: 100%;
+    }
+
+    .section--conteudo--escrito {
+      position: relative;
+      left: 25px;
+      top: 25px;
+    }
+
+    .footer-alfabeto {
+      display: none;
+    }
+
+  }
